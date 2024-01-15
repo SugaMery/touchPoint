@@ -1,0 +1,46 @@
+<!-- src/app/login/login.component.html -->
+<div class="wrapper">
+    <div class="inner">
+        <div class="image-holder">
+            <img src="assets/images/myallo-logo.png" alt="">
+        </div>
+<!-- Example: login.component.html -->
+<form (submit)="onSubmit()">
+    <h3>Connexion</h3>
+    <div class="form-wrapper">
+        <label class="label" for="name">Votre email</label>
+        <input type="text" placeholder="Email Address" class="form-control" name="email" [(ngModel)]="email">
+    </div>
+
+    <div class="form-wrapper">
+        <label class="label" for="password">Mot de passe</label>
+        <input type="password" placeholder="Mot de passe" class="form-control" name="password" [(ngModel)]="password">
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="form-control btn btn-primary rounded submit px-3">Se Connecter</button>
+    </div>
+
+    <div class="form-group d-md-flex">
+        <div class="w-50 text-left">
+            <label class="checkbox-wrap checkbox-primary mb-0">Remember Me
+                <input type="checkbox" checked name="rememberMe" [(ngModel)]="rememberMe">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="w-50 text-md-right">
+            <a href="#">Mot de passe oublié ?</a>
+        </div>
+    </div>
+</form>
+
+
+        <!-- Copyright and Links -->
+        <div class="copyright" style="position: absolute;font-size: 11px; bottom: 20px; left: 20px;color:white">
+            Copyright &copy; Myallo
+        </div>
+        <div class="privacy-links" style="position: absolute; font-size: 11px;bottom: 20px; right: 20px;">
+            <a href="#">Politique de Confidentialité</a> · <a href="#">Termes et Conditions</a>
+        </div>
+    </div>
+</div>
