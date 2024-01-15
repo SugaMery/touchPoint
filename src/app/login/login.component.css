@@ -38,6 +38,7 @@
     background: #fff;
     max-width: 850px;
     margin: auto;
+    border-radius: 15px;
     display: flex; }
     .inner .image-holder {
       width: 50%; }
@@ -8491,7 +8492,7 @@
     position: absolute;
     color: rgba(0, 0, 0, 0.1);
     font-size: 20px;
-    margin-top: -1px;
+    margin-top: -7px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
