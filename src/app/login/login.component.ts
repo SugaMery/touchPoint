@@ -1,4 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { User } from '../models/user/user.module';
+import { AuthService } from '../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,9 +14,28 @@ export class LoginComponent {
   password: string = '';
   rememberMe: boolean = true;
 
+  constructor(private authService: AuthService, private router: Router) {}
+
   onSubmit() {
-      // Add your form submission logic here
-      console.log('Form submitted:', this.email, this.password, this.rememberMe);
-      // You can add further logic, such as making an API call for authentication
+    const user: User = { email: this.email, password: this.password };
+  
+    this.authService.login(user).subscribe(
+      (response) => {
+        // Save user information to local storage
+        localStorage.setItem('currentUser', JSON.stringify(response.user));
+  
+        // Optionally, save a flag indicating that the user is logged in
+        localStorage.setItem('isLoggedIn', 'true');
+  
+        this.router.navigate(['/dashboard']);
+        console.log(response);
+        // Handle successful login here
+      },
+      (error) => {
+        console.log("not good");
+        // Handle login error here
+      }
+    );
   }
+  
 }

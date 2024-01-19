@@ -1,0 +1,82 @@
+.navbar-vertical .navbar-brand > img, .navbar-vertical .navbar-brand-img {
+    max-width: 100%;
+    max-height: 87px;
+}
+.sidenav .navbar-brand {
+    padding: 0rem 4px;
+    /* margin-bottom: 176px !important; */
+    /* margin-bottom: 148px !important; */
+}
+.navbar-vertical .navbar-brand .navbar-brand-img, .navbar-vertical .navbar-brand span {
+ 
+    margin-left: 5rem !important;
+}
+input ,.p-dropdown,.p-calendar,.p-inputMask{
+
+    width: 100%;
+}
+
+@media (min-width: 1400px){
+.container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    max-width: 2000px !important;
+}
+
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+:host ::ng-deep  .p-dropdown { 
+    width: 100%;
+}
+
+:host ::ng-deep .p-overlay-content .p-overlay-content .p-dropdown-panel .p-dropdown-items {
+
+    margin-left: -35px  !important;
+}
+
+/* Add this to your component's style or global style file */
+/* Add this to your component's style */
+:host ::ng-deep .custom-dropdown .p-dropdown-panel .p-dropdown-item {
+    background-color: blue !important;
+    color: white; /* Change text color to make it readable */
+  }
+  
+/* In your component's style or a global style file */
+.small-font {
+    font-size: 15px;
+  }
+
+  :host ::ng-deep  .card .card-body {
+
+    font-family: inherit;
+  }
+
+
+  
+
+  :host ::ng-deep .p-inputtext{
+    color: black;
+  }
+
+  :host ::ng-deep .p-calendar{
+    width: 100%;
+  }
+
+  
+  :host ::ng-deep .phoneInput{
+    display: grid;
+  }
+
+  :host ::ng-deep .btn {
+    font-size: 0.9rem;
+
+  }
+
+
+  .required-field {
+    color: red;
+    margin-left: 5px; /* Adjust spacing as needed */
+  }
+  

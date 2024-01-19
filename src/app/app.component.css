@@ -1,0 +1,28 @@
+:host ::ng-deep .bg-gradient-primary {
+    background-image: linear-gradient(195deg, #0511F2 0%, #058EF2 100%);
+}
+:host ::ng-deep  .shadow-primary {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px #1193f294 !important;
+}
+
+:host ::ng-deep  .bg-gradient-primary {
+    background-image: linear-gradient(195deg, #0511F2 0%, #058EF2 100%);
+}
+
+
+:host ::ng-deep .btn-primary {
+    background-color: #0511F2;
+}
+:host ::ng-deep .btn-primary:hover{
+    background-color: #055cf28c;
+}
+
+
+:host ::ng-deep .btn-primary  {
+    box-shadow: 0 3px 3px 0 #1193f294, 0 3px 1px -2px #1193f294, 0 1px 5px 0 #1193f294 !important;
+}
+
+:host ::ng-deep .btn.bg-gradient-primary{
+    box-shadow: 0 3px 3px 0 #1193f294, 0 3px 1px -2px #1193f294, 0 1px 5px 0 #1193f294 !important;
+  
+}
