@@ -17,25 +17,7 @@ export class LoginComponent {
   constructor(private authService: AuthService, private router: Router) {}
 
   onSubmit() {
-    const user: User = { email: this.email, password: this.password };
-  
-    this.authService.login(user).subscribe(
-      (response) => {
-        // Save user information to local storage
-        localStorage.setItem('currentUser', JSON.stringify(response.user));
-  
-        // Optionally, save a flag indicating that the user is logged in
-        localStorage.setItem('isLoggedIn', 'true');
-  
-        this.router.navigate(['/dashboard']);
-        console.log(response);
-        // Handle successful login here
-      },
-      (error) => {
-        console.log("not good");
-        // Handle login error here
-      }
-    );
+    this.router.navigate(['/dashboard']);
   }
   
 }

@@ -6,13 +6,16 @@ import { AuthGuard } from './auth.guard';
 import { NewContartComponent } from './new-contart/new-contart.component';
 import { CoordonnesBancairesComponent } from './coordonnes-bancaires/coordonnes-bancaires.component';
 import { ListContartComponent } from './list-contart/list-contart.component';
+import { FilesStatusComponent } from './files-status/files-status.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent},
-  { path: 'new_contart', component: NewContartComponent},
+  { path: 'new_bulkpayment', component: NewContartComponent},
   { path: 'coordonnes_bancaires', component: CoordonnesBancairesComponent},
-  { path: 'list_contart', component: ListContartComponent},
+  { path: 'list_bénéficiaires?id=5', component: ListContartComponent},
+  { path: 'list_files', component: FilesStatusComponent},
+  { path: 'for_validation', component: FilesStatusComponent},
   { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
 

@@ -17,6 +17,9 @@ import { ToastModule } from 'primeng/toast';
 import { CoordonnesBancairesComponent } from './coordonnes-bancaires/coordonnes-bancaires.component';
 import { ListContartComponent } from './list-contart/list-contart.component';
 import { ProgressBarModule } from 'primeng/progressbar';
+import { FileUploadModule } from 'primeng/fileupload';
+import { FilesStatusComponent } from './files-status/files-status.component';
+import { ValidateComponent } from './validate/validate.component';
 // For dynamic progressbar demo
 @NgModule({
   declarations: [
@@ -25,7 +28,9 @@ import { ProgressBarModule } from 'primeng/progressbar';
     DashboardComponent,
     NewContartComponent,
     CoordonnesBancairesComponent,
-    ListContartComponent
+    ListContartComponent,
+    FilesStatusComponent,
+    ValidateComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,8 @@ import { ProgressBarModule } from 'primeng/progressbar';
     CalendarModule,
     InputMaskModule,
     ToastModule,
-    ProgressBarModule
+    ProgressBarModule,
+    FileUploadModule
   ],
   providers: [
     provideClientHydration()

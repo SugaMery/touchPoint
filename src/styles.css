@@ -25,3 +25,13 @@
     color: #333;
     font-size: 13px;
     margin: 0; }
+
+
+
+    label, .form-label {
+        font-size: 0.875rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+        color: #7b809a;
+        margin-left: 0.25rem;
+    }

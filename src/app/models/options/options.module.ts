@@ -4,4 +4,6 @@ export interface Options {
   agent_id: number;
   contract_forfait: String;
   stauts?: String;
+  start_date?: string;
+  end_date?: string;
 }

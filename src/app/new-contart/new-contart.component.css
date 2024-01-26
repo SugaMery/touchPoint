@@ -79,4 +79,42 @@ input ,.p-dropdown,.p-calendar,.p-inputMask{
     color: red;
     margin-left: 5px; /* Adjust spacing as needed */
   }
-  
+  /* Add this to your component's CSS or the global styles.css file */
+
+.custom-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-file-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px; /* Adjust the font size as needed */
+  cursor: pointer;
+  opacity: 0;
+}
+
+.custom-file-label {
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px; /* Adjust the font size as needed */
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.custom-file-label::after {
+  content: 'Parcourir';
+  display: inline-block;
+  background: #007bff; /* Button color */
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}

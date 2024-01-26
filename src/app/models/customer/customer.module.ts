@@ -1,6 +1,5 @@
 export interface Customer {
   id?: number;
-  address_id?: number;
   civility: string;
   firstname: string;
   lastname: string;

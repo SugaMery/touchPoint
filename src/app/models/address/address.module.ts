@@ -5,4 +5,6 @@ export interface Address {
   location_id?: number;
   created_at?: string;
   updated_at?: string;
+  customer_id?: number;
+
 }
